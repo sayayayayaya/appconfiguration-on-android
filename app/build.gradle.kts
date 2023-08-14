@@ -38,6 +38,9 @@ dependencies {
     implementation("com.azure:azure-json:1.1.0")
     implementation("com.azure:azure-core-http-netty:1.13.6")
 
+    // TODO: wip, do not keep
+    // javax.xml.stream.XMLStreamException
+
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")

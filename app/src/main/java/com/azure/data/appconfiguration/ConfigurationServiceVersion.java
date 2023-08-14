@@ -5,6 +5,9 @@ package com.azure.data.appconfiguration;
 
 import com.azure.core.util.ServiceVersion;
 
+
+import javax.xml.stream.XMLStreamException;
+
 /**
  * The versions of Azure App Configuration supported by this client library.
  */
@@ -30,7 +33,11 @@ public enum ConfigurationServiceVersion implements ServiceVersion {
      */
     @Override
     public String getVersion() {
-        return this.version;
+        String test = """
+                1
+                test""";
+        XmlStreamException
+        return test;
     }
 
     /**

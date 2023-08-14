@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
         String randomStringFromAppConfig = ClientConstants.APP_CONFIG_TRACING_NAMESPACE_VALUE;
 
+        ConfigurationServiceVersion version = ConfigurationServiceVersion.V1_0;
+        String wah = version.getVersion();
+
         TextView text = findViewById(R.id.mainText);
-        text.setText(randomStringFromAppConfig);
+        text.setText(wah);
     }
 }

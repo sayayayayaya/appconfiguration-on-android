@@ -19,6 +19,11 @@ public class AppConfigUserAgentPropertiesTest {
     @Test
     public void testAzureConfiguration() {
         Map<String, String> properties = CoreUtils.getProperties("azure-data-appconfiguration.properties");
+        String test = """
+                1
+                test""";
+        ConfigurationServiceVersion version = ConfigurationServiceVersion.V1_0;
+        version.getVersion();
         assertNotNull(properties.get("version"));
         assertNotNull(properties.get("name"));
 //        assertTrue(properties.get("version").matches("\\d+\\.\\d+\\.\\d+(-beta\\.\\d+)?"));
