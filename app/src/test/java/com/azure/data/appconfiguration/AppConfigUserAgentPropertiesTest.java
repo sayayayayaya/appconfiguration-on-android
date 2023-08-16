@@ -22,10 +22,10 @@ public class AppConfigUserAgentPropertiesTest {
         assertNotNull(properties.get("version"));
         assertNotNull(properties.get("name"));
         // This fails, it's just checking a version number so I've commented it out -Saya
-//        assertTrue(properties.get("version").matches("\\d+\\.\\d+\\.\\d+(-beta\\.\\d+)?"));
+        // assertTrue(properties.get("version").matches("\\d+\\.\\d+\\.\\d+(-beta\\.\\d+)?"));
     }
 
-    // We want this to error eventually, that will show the test is running in android -Saya
+    // I added this, we want it to error eventually, that will show the test is running in android -Saya
     @Test
     public void testMultilineString() {
         String multiline = """
