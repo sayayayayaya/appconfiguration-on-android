@@ -14,12 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Proving that the app is interacting with appconfiguration
         String randomStringFromAppConfig = ClientConstants.APP_CONFIG_TRACING_NAMESPACE_VALUE;
-
-        ConfigurationServiceVersion version = ConfigurationServiceVersion.V1_0;
-        String wah = version.getVersion();
-
         TextView text = findViewById(R.id.mainText);
-        text.setText(wah);
+        text.setText(randomStringFromAppConfig);
     }
 }
