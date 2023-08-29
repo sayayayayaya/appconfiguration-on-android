@@ -42,10 +42,10 @@ public class HelloWorld {
 
         setting = client.getConfigurationSetting(key, null, null);
         System.out.printf("[GetConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue());
-
+        Log.i(TAG, setting.getKey());
         setting = client.deleteConfigurationSetting(key, null);
         System.out.printf("[DeleteConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue());
 
-        System.out.println("End of synchronous sample.");
+        Log.i(TAG,"End of synchronous sample.");
     }
 }
