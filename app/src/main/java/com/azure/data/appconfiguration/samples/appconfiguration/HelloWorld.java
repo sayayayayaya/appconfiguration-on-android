@@ -20,10 +20,10 @@ public class HelloWorld {
      */
 
     private static final String TAG = "HelloWorldOutput";
-    public static void main() {
+    public static void main(String[] args) {
         // The connection string value can be obtained by going to your App Configuration instance in the Azure portal
         // and navigating to "Access Keys" page under the "Settings" section.
-        String connectionString = "endpoint={endpoint_value};id={id_value};secret={secret_value}";
+        String connectionString = args[0];
 
         final ConfigurationClient client = new ConfigurationClientBuilder()
             .connectionString(connectionString)
