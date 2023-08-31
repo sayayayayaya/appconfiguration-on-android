@@ -38,13 +38,14 @@ public class HelloWorld {
 
 
         ConfigurationSetting setting = client.setConfigurationSetting(key, null, value);
-        System.out.printf("[SetConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue());
+        Log.i(TAG, String.format("[SetConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue()));
 
         setting = client.getConfigurationSetting(key, null, null);
-        System.out.printf("[GetConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue());
-        Log.i(TAG, setting.getKey());
+        Log.i(TAG, String.format("[GetConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue()));
+
         setting = client.deleteConfigurationSetting(key, null);
-        System.out.printf("[DeleteConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue());
+        Log.i(TAG, String.format("[DeleteConfigurationSetting] Key: %s, Value: %s", setting.getKey(), setting.getValue()));
+
 
         Log.i(TAG,"End of synchronous sample.");
     }

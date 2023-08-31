@@ -27,56 +27,36 @@ public class MainActivity extends AppCompatActivity {
         String randomStringFromAppConfig = ClientConstants.APP_CONFIG_TRACING_NAMESPACE_VALUE;
         String[] connectionString = {"[Insert Connection String Here]"};
 
-        HelloWorld.main(connectionString);
-        try {
-            WatchFeatureAsync.main(connectionString);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        WatchFeature.main(connectionString);
-        try {
-            SecretReferenceConfigurationSettingSampleAsync.main(connectionString);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        // Sample main method calls
+        // Comment out any call that you don't want
+
+        //HelloWorld.main(connectionString);
+        //WatchFeature.main(connectionString);
         SecretReferenceConfigurationSettingSample.main(connectionString);
-        ReadRevisionHistoryAsync.main(connectionString);
-        ReadRevisionHistory.main(connectionString);
-        ReadOnlySampleAsync.main(connectionString);
-        ReadOnlySample.main(connectionString);
+        //ReadRevisionHistoryAsync.main(connectionString);
+        //ReadRevisionHistory.main(connectionString);
+        //ReadOnlySampleAsync.main(connectionString);
+        //ReadOnlySample.main(connectionString);
+        //ListSnapshots.main(connectionString);
+        //FeatureFlagConfigurationSettingSample.main(connectionString);
+        //CreateSnapshot.main(connectionString);
+        //ConditionalRequest.main(connectionString);
+
         //ProxyOptionsSample.main(connectionString); // HostName??
         //PipelineSample.main(connectionString); // Error 412
         // Missing: AadAutentication, ConfiguarationSets, ReadMeSamples
-        try {
-            ListSnapshotsAsync.main(connectionString);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        ListSnapshots.main(connectionString);
-        try {
-            HelloWorldAsync.main(connectionString);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        try {
-            FeatureFlagConfigurationSettingSampleAsync.main(connectionString);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        FeatureFlagConfigurationSettingSample.main(connectionString);
-        try {
-            CreateSnapshotAsync.main(connectionString);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        CreateSnapshot.main(connectionString);
-        try {
-            ConditionalRequestAsync.main(connectionString);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        ConditionalRequest.main(connectionString);
 
+        //try {
+            //FeatureFlagConfigurationSettingSampleAsync.main(connectionString);
+            //ConditionalRequestAsync.main(connectionString);
+            //CreateSnapshotAsync.main(connectionString);
+            //HelloWorldAsync.main(connectionString);
+            //ListSnapshotsAsync.main(connectionString);
+            //SecretReferenceConfigurationSettingSampleAsync.main(connectionString);
+            //WatchFeatureAsync.main(connectionString);
+        //} catch (InterruptedException e) {
+        //    throw new RuntimeException(e);
+        //}
 
         TextView text = findViewById(R.id.mainText);
         text.setText(randomStringFromAppConfig);
