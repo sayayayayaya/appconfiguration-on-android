@@ -1,8 +1,10 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-package com.azure.security.keyvault.keys;
+package com.azure.data.appconfiguration.samples.keyvault.keys;
 
+import com.azure.security.keyvault.keys.KeyAsyncClient;
+import com.azure.security.keyvault.keys.KeyClientBuilder;
 import com.azure.security.keyvault.keys.models.CreateRsaKeyOptions;
 import com.azure.identity.DefaultAzureCredentialBuilder;
 

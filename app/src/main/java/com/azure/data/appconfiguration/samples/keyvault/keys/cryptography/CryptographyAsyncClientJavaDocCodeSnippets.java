@@ -1,12 +1,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
-package com.azure.security.keyvault.keys.cryptography;
+package com.azure.data.appconfiguration.samples.keyvault.keys.cryptography;
 
 import com.azure.core.http.HttpClient;
 import com.azure.core.http.policy.HttpLogDetailLevel;
 import com.azure.core.http.policy.HttpLogOptions;
 import com.azure.identity.DefaultAzureCredentialBuilder;
+import com.azure.security.keyvault.keys.cryptography.CryptographyAsyncClient;
+import com.azure.security.keyvault.keys.cryptography.CryptographyClientBuilder;
 import com.azure.security.keyvault.keys.cryptography.models.DecryptParameters;
 import com.azure.security.keyvault.keys.cryptography.models.EncryptParameters;
 import com.azure.security.keyvault.keys.cryptography.models.EncryptionAlgorithm;
