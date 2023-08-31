@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.azure.data.appconfiguration.implementation.ClientConstants;
 import com.azure.data.appconfiguration.samples.appconfiguration.HelloWorld;
+import com.azure.data.appconfiguration.samples.keyvault.keys.HelloWorld_KeyVault_keys;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Proving that the app is interacting with appconfiguration
         String randomStringFromAppConfig = ClientConstants.APP_CONFIG_TRACING_NAMESPACE_VALUE;
-        HelloWorld.main();
+        try {
+            HelloWorld_KeyVault_keys.main("https://android-key-vault.vault.azure.net/");
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         TextView text = findViewById(R.id.mainText);
         text.setText(randomStringFromAppConfig);
         Log.i("Tests", randomStringFromAppConfig);

@@ -38,6 +38,12 @@ dependencies {
     implementation("com.azure:azure-core:1.42.0")
     implementation("com.azure:azure-json:1.1.0")
     implementation("com.azure:azure-core-http-netty:1.13.6")
+    // https://mvnrepository.com/artifact/com.azure/azure-security-keyvault-keys
+    implementation("com.azure:azure-security-keyvault-keys:4.6.5")
+    // https://mvnrepository.com/artifact/com.azure/azure-identity
+    implementation("com.azure:azure-identity:1.10.0")
+
+
 
     // android
     implementation("androidx.appcompat:appcompat:1.6.1")
